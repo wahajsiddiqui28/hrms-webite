@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* google font css start */
+
+:root {
+  --background-color: #ffffff;
+  --default-color: #212529;
+  --heading-color: #2d465e;
+  --accent-color: #0d83fd;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+/* google font css end */
+
+
+/* gelober css start */
+.image-com img {
+    width: 100%;
+}
+/* gelober css end */
+
+
+/* Header style start  */
+header.header {
+    padding: 9px 20px;
+    position: sticky;
+    top: 0;
+}
+header.header nav.navbar ul.navbar-nav li.nav-item {
+    padding: 0 12px;
+}
+header.header nav.navbar {
+    border-radius: 36px;
+    padding: 12px 24px;
+    background: #091057;
+    box-shadow: 6px 1px 28px -2px #ffffff;
+    border: 1px solid #fff;
+}
+.buttons button.btn {
+    background: #000;
+    padding: 7px 17px;
+}
+.buttons button.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+header.header nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+    color: #fff;
+}
+
+/* Header style end */
+
+
+
+/* Banner style start  */
+section.banner{
+     /* background-image: linear-gradient(45deg, #0000008c, #00000052), url(../images/banner-bg.png); */
+     background-image: url(../images/banner_background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 0 0;
+}
+.banner-inner {
+    /* padding-top: 76px; */
+}
+.text-area h1 {
+    font-size: 61px;
+}
+.text-area p {
+    font-size: 18px;
+}
+/* Banner style end */
+
+
+/* section features start  */
+ul.info-list li {
+    padding: 12px 4px;
+}
+ul.info-list li i {
+    padding-right: 11px;
+    font-size: 21px;
+    color: #3e469a;
+}
+ .image-wrapper {
+    position: relative;
+}
+.image-wrapper .small-image {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    width: 45%;
+    border: 8px solid var(--surface-color);
+}
+ .image-wrapper .experience-badge {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    background-color: #0d83fd;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    min-width: 200px;
+    animation: experience-float 3s ease-in-out infinite;
+}
+.image-wrapper .experience-badge h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 0.5;
+}
+ .image-wrapper .experience-badge p {
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+}
+@keyframes experience-float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* section features end */
+
+
+/* section how its work start  */
+.features .nav-item {
+  margin: 0;
+  padding: 0 5px 0 0;
+}
+.features .nav-link.active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.features .nav-tabs {
+  border: 0;
+  background-color: 
+color-mix(in srgb, var(--default-color), transparent 96%);
+  display: inline-flex
+;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 6px;
+  width: auto;
+}
+.features .nav-link {
+  background-color: none;
+  color: var(--heading-color);
+  padding: 10px 30px;
+  transition: 0.3s;
+  border-radius: 50px;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
+  border: 0;
+  margin: 0;
+}
+.features .tab-pane h3 {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: 32px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.features .tab-pane h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  bottom: 0;
+}
+.features .tab-pane ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin-left: 20px;
+}
+.features .tab-pane ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--accent-color);
+}
+.features .nav-link h4 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+/* section.how-its-works.features ul.nav.nav-tabs li.nav-item a.nav-link h4.mb-0 {
+  font-size: 16px;
+} */
+section.how-its-works.features.py-5 ul.info-list li::before{
+  content: '\f560';
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: -20px;
+}
+.images-how-it-works img.img-fluid {
+  width: 85%;
+  border-radius: 11px;
+  border: 5px solid #091057;
+}
+section.how-its-works.features .tab-content ul.info-list li {
+  font-size: 14px;
+}
+.features .nav-link.active h4 {
+  color: #fff;
+}
+/* section how its work end */
