@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css">
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+
+
+
+
   </head>
   <body>
     
@@ -120,10 +130,196 @@
     </div>
  </section>
 <!-- section features end -->
+<!-- portfolio start  -->
+<section id="portfolio" class="portfolio section">
+<div class="container">
+  <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    <div class="row align-items-center">
+      <div class="col-lg-7 portfolio-info">
+        <h3> Fasterpsystems Showcase</h3>
+        <p>Voluptatem sit minima et dignissimos earum fuga vel nulla quidem aut quam</p>
+      </div>
+      <div class="col-lg-5 text-center text-lg-end">
+        <ul class="portfolio-filters isotope-filters aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="px-4 filter-active">All</li>
+          <li data-filter=".filter-app" class="px-4"> Recruitment</li>
+          <li data-filter=".filter-product" class="px-4"> HR</li>
+          <li data-filter=".filter-branding" class="px-4">Tasks</li>
+          <li data-filter=".filter-books" class="px-4">Careers</li>
+          <li data-filter=".filter-books" class="px-4"> Payroll</li>
+          <li data-filter=".filter-books" class="px-4"> Admin</li>
+          <li data-filter=".filter-books" class="px-4"> Inventory</li>
+        </ul><!-- End Portfolio Filters -->
+      </div>
+
+      
+
+    </div>
+    <div class="row gy-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 1344px;">
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 0px; top: 0px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/1.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Recruitment</h4>
+            <p>Job Dashbaord</p>
+            <div>
+              <a href="assets/images/portfolio/1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 440px; top: 0px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/product-1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Product 1</h4>
+            <p>Lorem ipsum</p>
+            <div>
+              <a href="assets/images/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 880px; top: 0px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/branding-1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Branding 1</h4>
+            <p>Lorem ipsum</p>
+            <div>
+              <a href="assets/images/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 0px; top: 336px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/books-1.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Books 1</h4>
+            <p>Lorem ipsum</p>
+            <div>
+              <a href="assets/images/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 440px; top: 336px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/app-2.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>App 2</h4>
+            <p>Lorem ipsum</p>
+            <div>
+              <a href="assets/images/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 880px; top: 336px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/product-2.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Product 2</h4>
+            <p>Lorem ipsum</p>
+            <div>
+              <a href="assets/images/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 0px; top: 672px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/branding-2.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Branding 2</h4>
+            <p>Lorem ipsum</p>
+            <div>
+              <a href="assets/images/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 440px; top: 672px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/books-2.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Books 2</h4>
+            <p>Lorem ipsum</p>
+            <div>
+              <a href="assets/images/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 880px; top: 672px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/app-3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>App 3</h4>
+            <p>Lorem ipsum</p>
+            <div>
+              <a href="assets/images/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 0px; top: 1008px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/product-3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Product 3</h4>
+            <p>Lorem ipsum</p>
+            <div>
+              <a href="assets/images/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 440px; top: 1008px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/branding-3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Branding 3</h4>
+            <p>Lorem ipsum</p>
+            <div>
+              <a href="assets/images/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 880px; top: 1008px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/books-3.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Books 3</h4>
+            <p>Lorem ipsum</p>
+            <div>
+              <a href="assets/images/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+    </div><!-- End Portfolio Container -->
+  </div>
+</div>
+</section>
+<!-- portfolio end -->
 <!-- section how its works start  -->
  <section class="how-its-works features py-5" id="HowItWorks">
   <div class="container aos-animate">
- 
     <div class="d-flex justify-content-center">
       <ul class="nav nav-tabs aos-init aos-animate" role="tablist" data-aos="fade-up" data-aos-delay="100" role="tablist">
         <li class="nav-item" role="presentation">
@@ -670,11 +866,58 @@
 </div>
 </footer>
 <!-- Footer end -->
+ <!-- Slick Slider JS -->
+
+    <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/fontawesome.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
     AOS.init();
   </script>
+  <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+        $(document).ready(function(){
+          // Initialize Slick Slider
+          $('.portfolio-filters').slick({
+            infinite: true,
+            slidesToShow: 5, // Show 3 items per slide
+            slidesToScroll: 1,
+            arrows: true,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+          });
+        });
+      </script>
+      <script>
+  // Initialize Isotope
+var $grid = $('.isotope-container').isotope({
+  itemSelector: '.portfolio-item',
+  layoutMode: 'masonry',
+  filter: '*',
+});
+// Filter items on button click
+$('.portfolio-filters').on('click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+</script>
   </body>
 </html>
