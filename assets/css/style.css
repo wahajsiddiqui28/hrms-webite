@@ -107,6 +107,7 @@ body{
 }
 .image-com img {
     width: 100%;
+    filter: drop-shadow(1px 1px 20px white);
 }
 .heading-com{
   position: relative;
@@ -624,6 +625,9 @@ color-mix(in srgb, var(--surface-color) 90%, white 5%);
 .portfolio .portfolio-content {
   position: relative;
   overflow: hidden;
+}
+ul.portfolio-filters.isotope-filters .slick-prev:before, .slick-next:before {
+  color: #000 !important;
 }
 .portfolio .portfolio-content img {
   transition: 0.3s;
