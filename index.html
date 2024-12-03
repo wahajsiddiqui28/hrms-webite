@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Fasterpsystems</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/fontawesome.min.css">
@@ -23,9 +24,9 @@
  <header class="header">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">Fasterpsystems</a>
+          <a class="navbar-brand" href="#home" style="color: var(--yellow-text) !important;"> <strong>Fasterpsystems</strong> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -39,7 +40,7 @@
                 <a class="nav-link" href="#features-2">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#HowItWorks">How It Works</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#features-cards">Benefits</a>
@@ -54,8 +55,8 @@
                 <a class="nav-link" href="#contact">Contact Us</a>
               </li>
             </ul>
-            <div class="buttons">
-                <button class="btn" style="background: #faaf40;"> <a  class="text-black" href="#">Request a Demo</a>  </button>
+            <div class="buttons" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button class="btn" style="background: #faaf40;"> <a  class="text-black" href="#" >Request a Demo</a>  </button>
                 <button class="btn" style="border: 1px solid #faaf40; background: none;"> <a href="#"> Sign Up </a> </button>
             </div>
           </div>
@@ -68,17 +69,17 @@
     <div class="container">
       <div class="banner-inner">
         <div class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="text-area text-white">
                     <h1 class="roboto-black" style="color: #faaf40;">Simplify Your HR with Management  Fasterpsystems</h1>
                     <p class="py-3">Streamline your HR processes with an all-in-one platform designed for efficiency, accuracy, and employee satisfaction.</p>
                     <div class="buttons">
-                        <button class="btn" style="background: #faaf40;"> <a class="text-black" href="#">Request a Demo</a>  </button>
+                        <button class="btn" style="background: #faaf40;"  data-bs-toggle="modal" data-bs-target="#exampleModal"> <a class="text-black" href="#" >Request a Demo</a>  </button>
                         <button class="btn" style="border: 1px solid #faaf40; background: none;"> <a href="#"> Sign Up </a> </button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="image-com">
                     <img src="assets/images/banner_image.webp" alt="">
                 </div>
@@ -91,10 +92,10 @@
 <!-- section features start  -->
  <section class="features py-5" id="AboutUs">
     <div class="container aos-animate" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-7 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                 <div class="text-area">
-                    <h6 class="text-primary text-bold">About us</h6>
+                    <h6 class="text-primary text-bold" style="color: var(--yellow-text) !important;">About us</h6>
                     <h2 class="roboto-bold mb-4 fs-2">Powerful About for Efficient HR Management</h2>
                     <ul class="info-list p-0">
                         <li><i class="fa-solid fa-users"></i> Employee Management: Centralized profiles, attendance, payroll.</li>
@@ -106,7 +107,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-6 col-md-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                 <!-- <div class="image-com">
                     <img src="assets/images/powerful-features-for-efficient-hr-management.jpg" alt="">
                 </div> -->
@@ -131,7 +132,7 @@
   <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
     <div class="row align-items-center">
       <div class="col-lg-7 portfolio-info">
-        <h3> Fasterpsystems Showcase</h3>
+        <h2 class="" style="color: var(--yellow-text);"> Fasterpsystems Showcase</h2>
         <p>Voluptatem sit minima et dignissimos earum fuga vel nulla quidem aut quam</p>
       </div>
       <div class="col-lg-5 text-center text-lg-end">
@@ -151,12 +152,12 @@
     <div class="row gy-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 1344px;">
       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 0px; top: 0px;">
         <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/1.png" class="img-fluid" alt="">
+          <img src="assets/images/portfolio/recruitment-jobs-board.png" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4>Recruitment</h4>
             <p>Job Dashbaord</p>
             <div>
-              <a href="assets/images/portfolio/1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="assets/images/portfolio/recruitment-jobs-board.png" title="Job Dashbaord" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               
             </div>
           </div>
@@ -164,12 +165,12 @@
       </div><!-- End Portfolio Item -->
       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 440px; top: 0px;">
         <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/recruitment-2.png" class="img-fluid" alt="">
+          <img src="assets/images/hr/absents-board.png" class="img-fluid" alt="">
           <div class="portfolio-info">
-            <h4>Product 1</h4>
-            <p>Lorem ipsum</p>
+            <h4>HR</h4>
+            <p> Absents Board</p>
             <div>
-              <a href="assets/images/portfolio/recruitment-2.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="assets/images/hr/absents-board.png" title="Absents Board" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               
             </div>
           </div>
@@ -177,12 +178,12 @@
       </div><!-- End Portfolio Item -->
       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 880px; top: 0px;">
         <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/branding-1.jpg" class="img-fluid" alt="">
+          <img src="assets/images/tasks/task-management.png" class="img-fluid" alt="">
           <div class="portfolio-info">
-            <h4>Branding 1</h4>
-            <p>Lorem ipsum</p>
+            <h4>Task</h4>
+            <p> Task Management</p>
             <div>
-              <a href="assets/images/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="assets/images/tasks/tasks-board.png" title="Task Management" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               
             </div>
           </div>
@@ -190,12 +191,12 @@
       </div><!-- End Portfolio Item -->
       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 0px; top: 336px;">
         <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/books-1.jpg" class="img-fluid" alt="">
+          <img src="assets/images/careers/internships.png" class="img-fluid" alt="">
           <div class="portfolio-info">
-            <h4>Books 1</h4>
-            <p>Lorem ipsum</p>
+            <h4>Careers</h4>
+            <p> Internships</p>
             <div>
-              <a href="assets/images/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="assets/images/careers/internships.png" title="Internships" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               
             </div>
           </div>
@@ -203,12 +204,12 @@
       </div><!-- End Portfolio Item -->
       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 440px; top: 336px;">
         <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/app-2.jpg" class="img-fluid" alt="">
+          <img src="assets/images/portfolio/recruitment-job-requisitions.png" class="img-fluid" alt="">
           <div class="portfolio-info">
-            <h4>App 2</h4>
-            <p>Lorem ipsum</p>
+            <h4>Recruitment</h4>
+            <p>Job Requisitions</p>
             <div>
-              <a href="assets/images/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="assets/images/portfolio/recruitment-job-requisitions.png" title="Job Requisitions" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               
             </div>
           </div>
@@ -216,12 +217,12 @@
       </div><!-- End Portfolio Item -->
       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 880px; top: 336px;">
         <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/product-2.jpg" class="img-fluid" alt="">
+          <img src="assets/images/hr/employees.png" class="img-fluid" alt="">
           <div class="portfolio-info">
-            <h4>Product 2</h4>
-            <p>Lorem ipsum</p>
+            <h4>HR</h4>
+            <p>Employees</p>
             <div>
-              <a href="assets/images/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="assets/images/hr/employees.png" title="Employees" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               
             </div>
           </div>
@@ -229,12 +230,12 @@
       </div><!-- End Portfolio Item -->
       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 0px; top: 672px;">
         <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/branding-2.jpg" class="img-fluid" alt="">
+          <img src="assets/images/tasks/tasks-board.png" class="img-fluid" alt="">
           <div class="portfolio-info">
-            <h4>Branding 2</h4>
-            <p>Lorem ipsum</p>
+            <h4>Tasks</h4>
+            <p>Tasks Board</p>
             <div>
-              <a href="assets/images/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="assets/images/tasks/tasks-board.png" title="Tasks Board" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               
             </div>
           </div>
@@ -242,12 +243,12 @@
       </div><!-- End Portfolio Item -->
       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 440px; top: 672px;">
         <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/books-2.jpg" class="img-fluid" alt="">
+          <img src="assets/images/careers/volunteers.png" class="img-fluid" alt="">
           <div class="portfolio-info">
-            <h4>Books 2</h4>
-            <p>Lorem ipsum</p>
+            <h4>Careers</h4>
+            <p>Volunteers</p>
             <div>
-              <a href="assets/images/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="assets/images/portfolio/books-2.jpg" title="Volunteers" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               
             </div>
           </div>
@@ -255,12 +256,25 @@
       </div><!-- End Portfolio Item -->
       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 880px; top: 672px;">
         <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/app-3.jpg" class="img-fluid" alt="">
+          <img src="assets/images/portfolio/recruitment-job-positions.png" class="img-fluid" alt="">
           <div class="portfolio-info">
-            <h4>App 3</h4>
-            <p>Lorem ipsum</p>
+            <h4>Recruitment</h4>
+            <p>Job Positions</p>
             <div>
-              <a href="assets/images/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="assets/images/portfolio/recruitment-job-positions.png" title="Job Positions" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              
+            </div>
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 880px; top: 672px;">
+        <div class="portfolio-content h-100">
+          <img src="assets/images/portfolio/recruitment-job-description.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Recruitment</h4>
+            <p>Job Description</p>
+            <div>
+              <a href="assets/images/portfolio/recruitment-job-description.png" title="Job Description" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               
             </div>
           </div>
@@ -268,18 +282,18 @@
       </div><!-- End Portfolio Item -->
       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 0px; top: 1008px;">
         <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/product-3.jpg" class="img-fluid" alt="">
+          <img src="assets/images/hr/leaves.png" class="img-fluid" alt="">
           <div class="portfolio-info">
-            <h4>Product 3</h4>
-            <p>Lorem ipsum</p>
+            <h4>HR</h4>
+            <p>Leaves</p>
             <div>
-              <a href="assets/images/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="assets/images/hr/leaves.png" title="Leaves" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               
             </div>
           </div>
         </div>
       </div><!-- End Portfolio Item -->
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 440px; top: 1008px;">
+      <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 440px; top: 1008px;">
         <div class="portfolio-content h-100">
           <img src="assets/images/portfolio/branding-3.jpg" class="img-fluid" alt="">
           <div class="portfolio-info">
@@ -291,15 +305,15 @@
             </div>
           </div>
         </div>
-      </div><!-- End Portfolio Item -->
+      </div>End Portfolio Item -->
       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 880px; top: 1008px;">
         <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/books-3.jpg" class="img-fluid" alt="">
+          <img src="assets/images/careers/fieldfacilitators.png" class="img-fluid" alt="">
           <div class="portfolio-info">
-            <h4>Books 3</h4>
-            <p>Lorem ipsum</p>
+            <h4>Careers</h4>
+            <p>Field Facilitators</p>
             <div>
-              <a href="assets/images/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="assets/images/careers/fieldfacilitators.png" title="Field Facilitators" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               
             </div>
           </div>
@@ -334,8 +348,8 @@
     </div>
     <div class="tab-content mt-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
       <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6  order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
             <h3>Add Employees</h3>
             <p class="fst-italic">
               Employees can check in and out using biometric devices, mobile apps, or manual entry. Automatic calculation of hours worked, overtime, and leaves is integrated. Managers can view attendance summaries and approve/reject leave requests directly.
@@ -346,14 +360,14 @@
               <li> <span>Managers can view attendance summaries and approve/reject leave requests directly.</span></li>
             </ul>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 text-center images-how-it-works">
+          <div class="col-lg-6 col-md-6  order-lg-2 text-center images-how-it-works">
             <img src="assets/images/addemployees.jpg" alt="" class="img-fluid">
           </div>
         </div>
       </div><!-- End tab content item -->
       <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+        <div class="row align-items-center">
+          <div class="col-lg-6  col-md-6 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
             <h3>Generate Payroll</h3>
             <p class="fst-italic">
               HRMS automatically calculates salaries based on attendance, overtime, deductions, and tax compliance. It generates detailed payslips for employees and supports direct bank transfers. You can customize salary components (e.g., basic pay, allowances, bonuses). Payroll reports can be exported for accounting and compliance purposes.
@@ -365,14 +379,14 @@
               <li> <span>Payroll reports can be exported for accounting and compliance purposes.</span></li>
             </ul>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 text-center images-how-it-works">
+          <div class="col-lg-6 col-md-6 order-lg-2 text-center images-how-it-works">
             <img src="assets/images/generate-payroll.jpg" alt="" class="img-fluid">
           </div>
         </div>
       </div><!-- End tab content item -->
       <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
             <h3>Track Attendance</h3>
             <ul class="info-list">
               <li> <span>Employees can check in and out using biometric devices, mobile apps, or manual entry.</span></li>
@@ -383,7 +397,7 @@
               Employees can check in and out using biometric devices, mobile apps, or manual entry. Automatic calculation of hours worked, overtime, and leaves is integrated. Managers can view attendance summaries and approve/reject leave requests directly.
             </p>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 text-center images-how-it-works">
+          <div class="col-lg-6 col-md-6 order-lg-2 text-center images-how-it-works">
             <img src="assets/images//trackattendance.jpg" alt="" class="img-fluid">
           </div>
         </div>
@@ -400,7 +414,7 @@
           <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div>
         <div class="row align-items-center">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4">
             <div class="feature-item text-end mb-5 aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
               <div class="d-flex align-items-center justify-content-end gap-4">
                 <div class="feature-content">
@@ -435,12 +449,12 @@
               </div>
             </div><!-- End .feature-item -->
           </div>
-          <div class="col-lg-4 ">
+          <div class="col-lg-4 col-md-4">
             <div class="phone-mockup text-center">
               <img src="assets/images/center.png" alt="Phone Mockup" class="img-fluid">
             </div>
           </div><!-- End Phone Mockup -->
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4">
             <div class="feature-item mb-5 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
               <div class="d-flex align-items-center gap-4">
                 <div class="feature-icon flex-shrink-0">
@@ -529,7 +543,7 @@
 <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
   <div class="row g-4 justify-content-center">
     <!-- Basic Plan -->
-    <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+    <div class="col-lg-4 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
       <div class="pricing-card">
         <h3>Basic Plan</h3>
         <div class="price">
@@ -553,14 +567,14 @@
             Nemo enim ipsam voluptatem
           </li>
         </ul>
-        <a href="#" class="btn btn-primary">
+        <a href="#" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal">
           Buy Now
           <i class="bi bi-arrow-right"></i>
         </a>
       </div>
     </div>
     <!-- Standard Plan -->
-    <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+    <div class="col-lg-4 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
       <div class="pricing-card popular">
         <div class="popular-badge">Most Popular</div>
         <h3>Standard Plan</h3>
@@ -589,14 +603,14 @@
             Ut labore et dolore magna
           </li>
         </ul>
-        <a href="#" class="btn btn-light w-100">
+        <a href="#" class="btn btn-light w-100"  data-bs-toggle="modal" data-bs-target="#exampleModal">
           Buy Now
           <i class="bi bi-arrow-right"></i>
         </a>
       </div>
     </div>
     <!-- Premium Plan -->
-    <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+    <div class="col-lg-4 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
       <div class="pricing-card">
         <h3>Premium Plan</h3>
         <div class="price">
@@ -628,7 +642,7 @@
             Maxime placeat facere possimus
           </li>
         </ul>
-        <a href="#" class="btn btn-primary">
+        <a href="#" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal">
           Buy Now
           <i class="bi bi-arrow-right"></i>
         </a>
@@ -647,7 +661,7 @@
 </div><!-- End Section Title -->
 <div class="container">
   <div class="row g-5">
-    <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+    <div class="col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
       <div class="testimonial-item">
         <img src="assets/images/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
         <h3>Saul Goodman</h3>
@@ -662,7 +676,7 @@
         </p>
       </div>
     </div><!-- End testimonial item -->
-    <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+    <div class="col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
       <div class="testimonial-item">
         <img src="assets/images/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
         <h3>Sara Wilsson</h3>
@@ -677,7 +691,7 @@
         </p>
       </div>
     </div><!-- End testimonial item -->
-    <div class="col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="300">
+    <div class="col-lg-6 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="300">
       <div class="testimonial-item">
         <img src="assets/images/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
         <h3>Jena Karlis</h3>
@@ -692,7 +706,7 @@
         </p>
       </div>
     </div><!-- End testimonial item -->
-    <div class="col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="400">
+    <div class="col-lg-6 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="400">
       <div class="testimonial-item">
         <img src="assets/images/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
         <h3>Matt Brandon</h3>
@@ -720,7 +734,7 @@
 </div>
 <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
   <div class="row g-4 g-lg-5">
-    <div class="col-lg-5">
+    <div class="col-lg-5 col-md-5">
       <div class="info-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
         <h3>Contact Info</h3>
         <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
@@ -756,7 +770,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-7">
+    <div class="col-lg-7 col-md-7">
       <div class="contact-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
         <h3>Get In Touch</h3>
         <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
@@ -854,11 +868,74 @@
 <div class="container copyright text-center mt-4">
   <p>© <span>Copyright</span> <strong class="px-1 sitename">Fasterpsystems</strong> <span>All Rights Reserved</span></p>
   <div class="credits">
-    Designed by <a href="#"> Wahaj Siddiqui (Mr Coder) </a>
+    Designed by <a href="#"> Fasterpsystems </a>
   </div>
 </div>
 </footer>
 <!-- Footer end -->
+<!-- Modal start  -->
+ <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+<!-- Modal -->
+<section class="modal-sec">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <section id="contact" class="contact section light-background">
+        <!-- Section Title -->
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+          <h2>Request a Demo</h2>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-12">
+              <div class="contact-form">
+                <form action="forms/contact.php" method="post" class="php-email-form aos-init" data-aos="fade-up" data-aos-delay="200">
+                  <div class="row gy-4">
+                    <div class="col-lg-6 col-mb-6 col-sm-6 col-12">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+                    <div class="col-lg-6 col-mb-6 col-sm-6 col-12 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+                    <div class="col-lg-6 col-mb-6 col-sm-6 col-12">
+                      <input type="number" class="form-control" name="number" placeholder="Enter Your Number" required="">
+                    </div>
+                    <div class="col-lg-6 col-mb-6 col-sm-6 col-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+                    <div class="col-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                      <!-- <div class="loading">Loading</div>
+                      <div class="error-message"></div> -->
+                      <!-- <div class="sent-message">Your message has been sent. Thank you!</div> -->
+                      <button type="submit" class="btn">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- Modal end -->
  <!-- Slick Slider JS -->
     <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -884,14 +961,21 @@
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 4,
                 slidesToScroll: 1
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 580,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 460,
+              settings: {
+                slidesToShow: 2,
                 slidesToScroll: 1
               }
             }
@@ -919,5 +1003,17 @@
         });
       });
     </script>
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              const button = document.querySelectorAll('.btn');
+              if (button) {
+                  button.addEventListener('click', function (event) {
+                      if (!event.target.closest('a')) {
+                          this.querySelector('a').click();
+                      }
+                  });
+              }
+          });
+      </script>
   </body>
 </html>

@@ -228,7 +228,7 @@ ul.info-list li i {
   padding: 0 5px 0 0;
 }
 .features .nav-link.active {
-  background-color: var(--accent-color);
+  background-color: var(--darkBlue-text);
   border-color: var(--accent-color);
 }
 .features .nav-tabs {
@@ -625,6 +625,7 @@ color-mix(in srgb, var(--surface-color) 90%, white 5%);
 .portfolio .portfolio-content {
   position: relative;
   overflow: hidden;
+  border: 2px solid var(--yellow-text);
 }
 ul.portfolio-filters.isotope-filters .slick-prev:before, .slick-next:before {
   color: #000 !important;
@@ -740,3 +741,20 @@ color-mix(in srgb, var(--default-color), transparent 90%);
 }
 /* Footer end */
 
+/* Modal start  */
+section.modal-sec div#exampleModal .modal-dialog {
+  max-width: 1063px;
+}
+section.modal-sec .modal-content{
+  background-color:  #f3f9ff !important
+}
+section.modal-sec {
+  padding: 0 !important;
+}
+section.modal-sec div#exampleModal .modal-dialog section#contact {
+  padding: 0;
+}
+section.modal-sec div#exampleModal .modal-dialog section#contact .container {
+  padding-bottom: 29px;
+}
+/* Modal end */
