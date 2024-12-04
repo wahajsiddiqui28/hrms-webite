@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css">
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
@@ -126,207 +127,359 @@
     </div>
  </section>
 <!-- section features end -->
+ 
 <!-- portfolio start  -->
 <section id="portfolio" class="portfolio section">
-<div class="container">
-  <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-    <div class="row align-items-center">
-      <div class="col-lg-7 portfolio-info">
-        <h2 class="" style="color: var(--yellow-text);"> Fasterpsystems Showcase</h2>
-        <p>Voluptatem sit minima et dignissimos earum fuga vel nulla quidem aut quam</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="portfolio-info">
+          <h2 class="" style="color: var(--yellow-text);"> Fasterpsystems Showcase</h2>
+          <p>Voluptatem sit minima et dignissimos earum fuga vel nulla quidem aut quam</p>
+        </div>
       </div>
-      <div class="col-lg-5 text-center text-lg-end">
-        <ul class="portfolio-filters isotope-filters aos-init aos-animate p-0" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="px-4 filter-active">All</li>
-          <li data-filter=".filter-app" class="px-4"> Recruitment</li>
-          <li data-filter=".filter-product" class="px-4"> HR</li>
-          <li data-filter=".filter-branding" class="px-4">Tasks</li>
-          <li data-filter=".filter-books" class="px-4">Careers</li>
-          <li data-filter=".filter-books" class="px-4"> Payroll</li>
-          <li data-filter=".filter-books" class="px-4"> Admin</li>
-          <li data-filter=".filter-books" class="px-4"> Inventory</li>
-        </ul><!-- End Portfolio Filters -->
+      <div class="col-lg-6">
+          <nav>
+            <!-- <div class="portfolio-filters slider"> -->
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">All</button>
+                <button class="nav-link" id="nav-Recruitment-tab" data-bs-toggle="tab" data-bs-target="#nav-Recruitment" type="button" role="tab" aria-controls="nav-Recruitment" aria-selected="false">Recruitment</button>
+                <button class="nav-link" id="nav-Hr-tab" data-bs-toggle="tab" data-bs-target="#nav-Hr" type="button" role="tab" aria-controls="nav-Hr" aria-selected="false">Hr</button>
+                <button class="nav-link" id="nav-Tasks-tab" data-bs-toggle="tab" data-bs-target="#nav-Tasks" type="button" role="tab" aria-controls="nav-Tasks" aria-selected="false">Tasks</button>
+                <button class="nav-link" id="nav-Careers-tab" data-bs-toggle="tab" data-bs-target="#nav-Careers" type="button" role="tab" aria-controls="nav-Careers" aria-selected="false">Careers</button>
+              </div>
+            <!-- </div> -->
+          </nav>
       </div>
-      
     </div>
-    <div class="row gy-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 1344px;">
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/recruitment-jobs-board.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Recruitment</h4>
-            <p>Job Dashbaord</p>
-            <div>
-              <a href="assets/images/portfolio/recruitment-jobs-board.png" title="Job Dashbaord" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab" tabindex="0">
+        <!-- Tab All start  -->
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/portfolio/recruitment-jobs-board.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Recruitment</h4>
+                <p>Job Dashbaord</p>
+                <div>
+                  <a href="assets/images/portfolio/recruitment-jobs-board.png" title="Job Dashbaord" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/hr/absents-board.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>HR</h4>
+                <p> Absents Board</p>
+                <div>
+                  <a href="assets/images/hr/absents-board.png" title="Absents Board" data-fancybox="gallery"  class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/tasks/task-management.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Task</h4>
+                <p> Task Management</p>
+                <div>
+                  <a href="assets/images/tasks/tasks-board.png" title="Task Management" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/careers/internships.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Careers</h4>
+                <p> Internships</p>
+                <div>
+                  <a href="assets/images/careers/internships.png" title="Internships" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/portfolio/recruitment-job-requisitions.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Recruitment</h4>
+                <p>Job Requisitions</p>
+                <div>
+                  <a href="assets/images/portfolio/recruitment-job-requisitions.png" title="Job Requisitions" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/hr/employees.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>HR</h4>
+                <p>Employees</p>
+                <div>
+                  <a href="assets/images/hr/employees.png" title="Employees" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/tasks/tasks-board.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Tasks</h4>
+                <p>Tasks Board</p>
+                <div>
+                  <a href="assets/images/tasks/tasks-board.png" title="Tasks Board" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/careers/volunteers.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Careers</h4>
+                <p>Volunteers</p>
+                <div>
+                  <a href="assets/images/careers/volunteers.png" title="Volunteers" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/portfolio/recruitment-job-positions.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Recruitment</h4>
+                <p>Job Positions</p>
+                <div>
+                  <a href="assets/images/portfolio/recruitment-job-positions.png" title="Job Positions" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/portfolio/recruitment-job-description.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Recruitment</h4>
+                <p>Job Description</p>
+                <div>
+                  <a href="assets/images/portfolio/recruitment-job-description.png" title="Job Description" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/hr/leaves.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>HR</h4>
+                <p>Leaves</p>
+                <div>
+                  <a href="assets/images/hr/leaves.png" title="Leaves" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/careers/fieldfacilitators.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Careers</h4>
+                <p>Field Facilitators</p>
+                <div>
+                  <a href="assets/images/careers/fieldfacilitators.png" title="Field Facilitators" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div><!-- End Portfolio Item -->
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 440px; top: 0px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/hr/absents-board.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>HR</h4>
-            <p> Absents Board</p>
-            <div>
-              <a href="assets/images/hr/absents-board.png" title="Absents Board" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
+        <!-- Tab All end -->
+      </div>
+      <div class="tab-pane fade" id="nav-Recruitment" role="tabpanel" aria-labelledby="nav-Recruitment-tab" tabindex="0">
+        <!-- Tab Recruitment start  -->
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/portfolio/recruitment-jobs-board.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Recruitment</h4>
+                <p>Job Dashbaord</p>
+                <div>
+                  <a href="assets/images/portfolio/recruitment-jobs-board.png" title="Job Dashbaord" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/portfolio/recruitment-job-requisitions.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Recruitment</h4>
+                <p>Job Requisitions</p>
+                <div>
+                  <a href="assets/images/portfolio/recruitment-job-requisitions.png" title="Job Requisitions" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/portfolio/recruitment-job-positions.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Recruitment</h4>
+                <p>Job Positions</p>
+                <div>
+                  <a href="assets/images/portfolio/recruitment-job-positions.png" title="Job Positions" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/portfolio/recruitment-job-description.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Recruitment</h4>
+                <p>Job Description</p>
+                <div>
+                  <a href="assets/images/portfolio/recruitment-job-description.png" title="Job Description" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div><!-- End Portfolio Item -->
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 880px; top: 0px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/tasks/task-management.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Task</h4>
-            <p> Task Management</p>
-            <div>
-              <a href="assets/images/tasks/tasks-board.png" title="Task Management" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
+        <!-- Tab Recruitment end -->
+      </div>
+      <div class="tab-pane fade" id="nav-Hr" role="tabpanel" aria-labelledby="nav-Hr-tab" tabindex="0">
+        <!-- Tab Hr start  -->
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/hr/absents-board.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>HR</h4>
+                <p> Absents Board</p>
+                <div>
+                  <a href="assets/images/hr/absents-board.png" title="Absents Board" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/hr/employees.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>HR</h4>
+                <p>Employees</p>
+                <div>
+                  <a href="assets/images/hr/employees.png" title="Employees" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/hr/leaves.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>HR</h4>
+                <p>Leaves</p>
+                <div>
+                  <a href="assets/images/hr/leaves.png" title="Leaves" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a> 
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div><!-- End Portfolio Item -->
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 0px; top: 336px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/careers/internships.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Careers</h4>
-            <p> Internships</p>
-            <div>
-              <a href="assets/images/careers/internships.png" title="Internships" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
+        <!-- Tab Hr end -->
+      </div>
+      <div class="tab-pane fade" id="nav-Tasks" role="tabpanel" aria-labelledby="nav-Tasks-tab" tabindex="0">
+        <!-- Tab Tasks start  -->
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/tasks/task-management.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Task</h4>
+                <p> Task Management</p>
+                <div>
+                  <a href="assets/images/tasks/tasks-board.png" title="Task Management" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/tasks/tasks-board.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Tasks</h4>
+                <p>Tasks Board</p>
+                <div>
+                  <a href="assets/images/tasks/tasks-board.png" title="Tasks Board" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div><!-- End Portfolio Item -->
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 440px; top: 336px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/recruitment-job-requisitions.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Recruitment</h4>
-            <p>Job Requisitions</p>
-            <div>
-              <a href="assets/images/portfolio/recruitment-job-requisitions.png" title="Job Requisitions" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
+        <!-- Tab Tasks end -->
+      </div>
+      <div class="tab-pane fade" id="nav-Careers" role="tabpanel" aria-labelledby="nav-Careers-tab" tabindex="0">
+        <!-- Tab Careers start  -->
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/careers/internships.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Careers</h4>
+                <p> Internships</p>
+                <div>
+                  <a href="assets/images/careers/internships.png" title="Internships" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/careers/volunteers.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Careers</h4>
+                <p>Volunteers</p>
+                <div>
+                  <a href="assets/images/careers/volunteers.png" title="Volunteers" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="portfolio-content">
+              <img src="assets/images/careers/fieldfacilitators.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Careers</h4>
+                <p>Field Facilitators</p>
+                <div>
+                  <a href="assets/images/careers/fieldfacilitators.png" title="Field Facilitators" data-fancybox="gallery" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div><!-- End Portfolio Item -->
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 880px; top: 336px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/hr/employees.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>HR</h4>
-            <p>Employees</p>
-            <div>
-              <a href="assets/images/hr/employees.png" title="Employees" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
-            </div>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 0px; top: 672px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/tasks/tasks-board.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Tasks</h4>
-            <p>Tasks Board</p>
-            <div>
-              <a href="assets/images/tasks/tasks-board.png" title="Tasks Board" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
-            </div>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 440px; top: 672px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/careers/volunteers.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Careers</h4>
-            <p>Volunteers</p>
-            <div>
-              <a href="assets/images/portfolio/books-2.jpg" title="Volunteers" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
-            </div>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 880px; top: 672px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/recruitment-job-positions.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Recruitment</h4>
-            <p>Job Positions</p>
-            <div>
-              <a href="assets/images/portfolio/recruitment-job-positions.png" title="Job Positions" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
-            </div>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 880px; top: 672px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/recruitment-job-description.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Recruitment</h4>
-            <p>Job Description</p>
-            <div>
-              <a href="assets/images/portfolio/recruitment-job-description.png" title="Job Description" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
-            </div>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 0px; top: 1008px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/hr/leaves.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>HR</h4>
-            <p>Leaves</p>
-            <div>
-              <a href="assets/images/hr/leaves.png" title="Leaves" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
-            </div>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-      <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 440px; top: 1008px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/portfolio/branding-3.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Branding 3</h4>
-            <p>Lorem ipsum</p>
-            <div>
-              <a href="assets/images/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
-            </div>
-          </div>
-        </div>
-      </div>End Portfolio Item -->
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books" style="position: absolute; left: 880px; top: 1008px;">
-        <div class="portfolio-content h-100">
-          <img src="assets/images/careers/fieldfacilitators.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Careers</h4>
-            <p>Field Facilitators</p>
-            <div>
-              <a href="assets/images/careers/fieldfacilitators.png" title="Field Facilitators" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              
-            </div>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-    </div><!-- End Portfolio Container -->
+        <!-- Tab Careers end -->
+      </div>
+    </div>
+    <!--  -->
+    
   </div>
-</div>
 </section>
 <!-- portfolio end -->
 <!-- section how its works start  -->
  <section class="how-its-works features py-5" id="HowItWorks">
-  <div class="container aos-animate">
+  <div class="container aos-animate"  data-aos="fade-up" data-aos-delay="100">
     <div class="d-flex justify-content-center">
       <ul class="nav nav-tabs aos-init aos-animate" role="tablist" data-aos="fade-up" data-aos-delay="100" role="tablist">
         <li class="nav-item" role="presentation">
@@ -346,7 +499,7 @@
         </li><!-- End tab nav item -->
       </ul>
     </div>
-    <div class="tab-content mt-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+    <div class="tab-content mt-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
       <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
         <div class="row align-items-center">
           <div class="col-lg-6 col-md-6  order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
@@ -944,63 +1097,50 @@
     <script>
       AOS.init();
     </script>
-    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
+    <!-- <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        // Initialize Slick Slider
-        $('.portfolio-filters').slick({
-          infinite: true,
-          slidesToShow: 6, // Show 3 items per slide
-          slidesToScroll: 1,
-          arrows: true,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1
-              }
-            },
-            {
-              breakpoint: 580,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-              }
-            },
-            {
-              breakpoint: 460,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-              }
-            }
-          ]
-        });
-      });
-    </script>
-    <script>
-      // Initialize Isotope
-      var $grid = $('.isotope-container').isotope({
-          itemSelector: '.portfolio-item',
-          layoutMode: 'masonry',
-          filter: '*',
-        });
-        // Filter items on button click
-        $('.portfolio-filters').on('click', 'li', function() {
-          var filterValue = $(this).attr('data-filter');
-          $grid.isotope({ filter: filterValue });
-        });
-    </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const lightbox = GLightbox({
-          selector: '.glightbox'
-        });
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+     <script>
+        $(document).ready(function() {
+          // Initialize Slick Slider
+          $('.portfolio-filters').slick({
+              infinite: true,
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              arrows: true,
+              responsive: [
+                  {
+                      breakpoint: 768,
+                      settings: {
+                          slidesToShow: 4,
+                          slidesToScroll: 1
+                      }
+                  },
+                  {
+                      breakpoint: 580,
+                      settings: {
+                          slidesToShow: 3,
+                          slidesToScroll: 1
+                      }
+                  },
+                  {
+                      breakpoint: 460,
+                      settings: {
+                          slidesToShow: 2,
+                          slidesToScroll: 1
+                      }
+                  }
+              ]
+          });
+
+          // Handle tab click inside slider
+          $('.portfolio-filters button').on('click', function() {
+              $('.portfolio-filters button').removeClass('active');
+              $(this).addClass('active');
+          });
       });
     </script>
       <script>

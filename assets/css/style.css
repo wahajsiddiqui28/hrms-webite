@@ -622,6 +622,35 @@ color-mix(in srgb, var(--surface-color) 90%, white 5%);
 /* Contact Us end */
 
 /* portfolio start */
+
+
+/*  */
+section.portfolio.section nav div#nav-tab {
+  border: 0;
+  justify-content: end;
+}
+section.portfolio.section nav div#nav-tab button {
+  border: 0;
+}
+section.portfolio.section .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+  color: var(--darkBlue-text);
+}
+section.portfolio.section .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  color: var(--yellow-text);
+}
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
 .portfolio .portfolio-content {
   position: relative;
   overflow: hidden;
@@ -634,7 +663,7 @@ ul.portfolio-filters.isotope-filters .slick-prev:before, .slick-next:before {
   transition: 0.3s;
 }
 .portfolio .portfolio-content .portfolio-info {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   inset: 0;
   z-index: 3;
